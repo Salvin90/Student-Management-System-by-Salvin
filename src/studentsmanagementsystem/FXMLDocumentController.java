@@ -20,7 +20,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 //import java.sql.*;
 
@@ -122,7 +121,6 @@ public class FXMLDocumentController implements Initializable {
         colEmail.setCellValueFactory(new PropertyValueFactory<Students, String>("email"));
         tvStudents.setItems(list);
     }
-
     public void executeQuery(String query) {
         Connection conn = getConnection();
 
